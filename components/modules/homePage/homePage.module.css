@@ -1,0 +1,186 @@
+.container {
+  display: flex;
+}
+
+.containerDefinition {
+  margin-top: 100px;
+}
+
+.containerDefinition h3 {
+  font-size: 1.5rem;
+  color: #53c60b;
+  margin: 24px 0;
+}
+
+.containerDefinition p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 30px;
+  margin: 18px 0;
+}
+
+.right img {
+  width: 450px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.left h2 {
+  border-bottom: 3px solid #53c60b;
+  width: fit-content;
+  margin: 20px 0;
+}
+
+.left p {
+  font-weight: 500;
+  margin: 16px 0;
+}
+
+.left span {
+  color: grey;
+  text-align: justify;
+}
+
+.left a {
+  background-color: #53c60b;
+  color: white;
+  padding: 10px 30px;
+  width: fit-content;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.containerAttributes {
+  margin-top: 100px;
+}
+
+.containerAttributes h3 {
+  font-size: 1.5rem;
+  color: #53c60b;
+  margin: 24px 0;
+}
+
+.subContainerAttributes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subContainerAttributes div {
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: rgba(92, 245, 115, 0.123) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  text-align: center;
+  padding: 25px 20px 20px;
+  margin-top: 20px;
+}
+
+.subContainerAttributes p {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.containerCompanies {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.containerGuide {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.containerGuide a {
+  box-shadow: rgba(92, 245, 115, 0.123) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  padding: 15px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.containerInstruction {
+  margin-bottom: 100px;
+}
+
+.containerInstruction h3 {
+  font-size: 1.5rem;
+  color: #53c60b;
+  margin: 24px 0;
+}
+
+.containerInstruction ul {
+  padding: 0;
+}
+
+.containerInstruction li {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 30px;
+  list-style: none;
+}
+
+.containerInstruction li::before {
+  content: "• ";
+  color: #53c60b;
+}
+
+.containerRestrictions {
+  margin: 100px 0 200px;
+}
+
+.containerRestrictions h3 {
+  font-size: 1.5rem;
+  color: #53c60b;
+  margin: 24px 0;
+}
+
+.containerRestrictions p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 30px;
+}
+
+
+@media (max-width: 900px) {
+  .right img {
+    width: 350px;
+  }
+
+  .containerGuide a {
+    padding: 10px 20px;
+  }
+
+  .left {
+    margin-top: 10px;
+  }
+
+  .subContainerAttributes {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .right {
+    text-align: center;
+  }
+
+  .right img {
+    width: 90%;
+  }
+
+  .left {
+    margin-top: 20px;
+  }
+}
